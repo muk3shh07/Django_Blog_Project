@@ -1,16 +1,17 @@
-[tool.poetry]
-name = "drf-project"
+[project]
+name = "blogproject"
 version = "0.1.0"
 description = ""
-authors = ["Sameer Shahi Thakuri (Sam) <70689865+Sam231221@users.noreply.github.com>"]
+authors = [
+    {name = "muk3shh07",email = "dhamimukesh076@gmail.com"}
+]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.13"
-django = "^5.1.4"
-djangorestframework = "^3.15.2"
+requires-python = ">=3.13"
+dependencies = [
+    "django (>=5.1.5,<6.0.0)"
+]
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
